@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AAR — Auto-Alignment Regulation</title>
+  <meta name="description" content="AAR (Auto-Alignment Regulation) is an independent normative governance framework for artificial intelligence and automated decision systems." />
+
+  <style>
+    :root{
+      --bg: #F4F4F5;          /* quase branco */
+      --paper: #FAFAFB;       /* boundary do corpo (levemente mais claro) */
+      --text: #222325;        /* carvão */
+      --muted: #3A3B3E;
+      --red: #7A1117;         /* deep red / burgundy */
+      --border: 2px;
+      --radius: 10px;
+      --maxw: 920px;
+      --pad: 28px;
+    }
+
+    /* Tipografia: "robótica" neutra e institucional (sem sci-fi). */
+    body{
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      line-height: 1.45;
+      letter-spacing: 0.1px;
+    }
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 56px 20px 64px;
+    }
+
+    /* 1) Boundary do título (topo) */
+    .title-boundary{
+      display: inline-block;
+      border: var(--border) solid var(--red);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      background: transparent;
+    }
+    .title{
+      margin: 0;
+      font-size: 22px;
+      font-weight: 650;
+      letter-spacing: 0.2px;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    /* 2) Subtítulo fora de boundaries, vermelho, espaçado e “estendido” */
+    .subtitle{
+      margin: 14px 0 22px;
+      color: var(--red);
+      font-size: 13px;
+      font-weight: 650;
+      letter-spacing: 0.24em;   /* espaçamento */
+      text-transform: uppercase;
+    }
+
+    /* 3) Boundary do corpo (tudo dentro) */
+    .body-boundary{
+      border: var(--border) solid var(--red);
+      border-radius: var(--radius);
+      background: var(--paper);
+      padding: var(--pad);
+    }
+
+    .p{
+      margin: 0 0 14px;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    .p.muted{
+      color: var(--muted);
+    }
+
+    .lines-title{
+      margin: 22px 0 10px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .lines{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      column-gap: 26px;
+    }
+
+    .lines li{
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 15px;
+    }
+    .lines li:last-child{ border-bottom: none; }
+
+    .footer{
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 520px){
+      .title{ font-size: 18px; white-space: normal; }
+      .subtitle{ letter-spacing: 0.18em; font-size: 12px; }
+      .body-boundary{ padding: 20px; }
+    }
+
+    /* Acessibilidade: foco */
+    a{
+      color: var(--red);
+      text-decoration: none;
+    }
+    a:focus{
+      outline: 2px dashed var(--red);
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap" aria-label="AAR Institutional Page">
+    <!-- 1) Boundary do título -->
+    <div class="title-boundary" role="presentation">
+      <h1 class="title">AAR — Auto-Alignment Regulation</h1>
+    </div>
+
+    <!-- 2) Subtítulo fora -->
+    <div class="subtitle">Normative Governance Framework</div>
+
+    <!-- 3) Boundary do corpo -->
+    <section class="body-boundary" aria-label="AAR Positioning">
+      <p class="p">
+        <strong>AAR (Auto-Alignment Regulation)</strong> is an independent <strong>normative governance framework</strong>
+        for artificial intelligence and automated decision systems.
+      </p>
+
+      <p class="p">
+        Its focus is <strong>pre-execution decision governance</strong>, including authority boundaries, deviation evaluation,
+        and graduated containment in critical contexts.
+      </p>
+
+      <p class="p">
+        AAR is <strong>not a product</strong>, <strong>not a service</strong>, and <strong>not a software system</strong>.
+        Use is subject to licensing.
+      </p>
+
+      <div class="lines-title">AAR Framework Lines</div>
+      <ul class="lines" aria-label="AAR Framework Lines list">
+        <li>AAR Core</li>
+        <li>AAR Hard Core</li>
+        <li>AAR Driver</li>
+        <li>AAR Hard Driver</li>
+        <li>AAR Collaborative Agents</li>
+        <li>AAR Hard Decision</li>
+      </ul>
+
+      <div class="footer">
+        <em>Governance before implementation.</em>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
